@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import News from './news api/News';
+import HookuseState from './bahas';
+import FormElem from './elemen form/FormElement';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <div className="nav">
+          <ul>
+            <li>
+              <Link to="/Form">Form</Link>
+            </li>
+            <li>
+              <Link to="/News">News</Link>
+            </li>
+            <li>
+              <Link to="/Cycle">Cycle</Link>
+            </li>
+          </ul>
+        </div>
+        <Routes>
+          <Route
+            path="/Form"
+            element={
+              <div className="container">
+                <FormElem />
+              </div>
+            }
+          />
+          <Route path="/News" element={<News />} />
+          <Route path="/Cycle" element={<HookuseState />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
-
+// belum nampilin vaidasi error, buat nampilin error di beda file komponen
 export default App;

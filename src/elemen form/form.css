@@ -1,0 +1,15 @@
+.container {
+    border: 1px solid black;
+    width: 500px;
+    margin: 20px auto;
+  }
+  .submit {
+    padding: 20px 0;
+    text-align: center;
+  }
+  table {
+    margin: 0 auto;
+  }
+  table tr td {
+    padding-top: 20px;
+  }
