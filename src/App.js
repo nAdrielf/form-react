@@ -12,13 +12,13 @@ function App() {
         <div className="nav">
           <ul>
             <li>
-              <Link to="/Form">Form</Link>
+              <Link to="/Form">Form!</Link>
             </li>
             <li>
-              <Link to="/News">News</Link>
+              <Link to="/News">News!</Link>
             </li>
             <li>
-              <Link to="/Cycle">Cycle</Link>
+              <Link to="/Cycle">Cycle!</Link>
             </li>
           </ul>
         </div>
